@@ -1,0 +1,9 @@
+usuario_new:
+    path:     /new
+    defaults: { _controller: "SeguridadBundle:Usuario:new" }
+
+usuario_create:
+    path:     /create
+    defaults: { _controller: "SeguridadBundle:Usuario:create" }
+    requirements: { _method: post }
+

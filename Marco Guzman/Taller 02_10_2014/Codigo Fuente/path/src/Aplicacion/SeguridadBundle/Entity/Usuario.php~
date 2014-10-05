@@ -1,0 +1,31 @@
+<?php
+
+namespace Aplicacion\SeguridadBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Usuario
+ */
+class Usuario extends BaseUser{
+    
+    // MODIFICACION
+
+    /**
+     * @var integer
+     */
+    protected $id;
+
+    // FIN MODIFICACION
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId() {
+        return $this->id;
+    }
+
+}

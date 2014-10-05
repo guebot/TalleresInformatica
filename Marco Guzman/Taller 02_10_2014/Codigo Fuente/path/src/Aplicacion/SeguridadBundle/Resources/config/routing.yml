@@ -1,0 +1,7 @@
+seguridad_usuario:
+    resource: "@SeguridadBundle/Resources/config/routing/usuario.yml"
+    prefix:   /usuario
+
+seguridad_homepage:
+    path:     /
+    defaults: { _controller: SeguridadBundle:Default:index }
